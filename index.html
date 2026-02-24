@@ -9,49 +9,57 @@
 <body>
 
 <!-- NAVBAR -->
-<header>
-  <nav class="nav">
-    <h2>RUDRA INTERIOR</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<header class="header">
+  <div class="container nav">
+    <h2 class="logo">RUDRA INTERIOR</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<!-- HOME -->
+<!-- HERO -->
 <section id="home" class="hero">
-  <div class="hero-content">
+  <div class="hero-overlay">
     <h1>Creative Interior Solutions for Modern Living</h1>
     <p>Designed & Executed by Rudra Interior, Kolkata</p>
 
     <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="tel:9836421193" class="btn btn-dark">Call Now</a>
-      <a href="https://wa.me/919836421193" class="btn btn-green">WhatsApp</a>
+      <a href="#projects" class="btn gold">View Projects</a>
+      <a href="tel:9836421193" class="btn dark">Call Now</a>
+      <a href="https://wa.me/919836421193" class="btn green">WhatsApp</a>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
-  <h2>About Us</h2>
-  <p><strong>Owner:</strong> Sagar Das</p>
-  <p>Skilled Interior Designer & Fine Artist</p>
-  <p><strong>Specialty:</strong> Difficult & Custom Designs</p>
-  <p><strong>Location:</strong> Laketown, Kolkata</p>
-  <p class="highlight">
-    Rudra Interior is a one-man creative studio delivering premium interior solutions with artistic excellence.
-  </p>
+  <div class="container two-col">
+    <div>
+      <h2>About Rudra Interior</h2>
+      <p><strong>Owner:</strong> Sagar Das</p>
+      <p>Skilled Interior Designer & Fine Artist</p>
+      <p>Specialized in difficult & custom designs</p>
+      <p><strong>Location:</strong> Laketown, Kolkata</p>
+
+      <p class="highlight">
+        Rudra Interior is a one-man creative studio delivering premium interior solutions with artistic excellence.
+      </p>
+    </div>
+
+    <img src="https://picsum.photos/500/400" alt="Interior">
+  </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="section light">
   <h2>Our Services</h2>
-  <div class="grid">
+
+  <div class="container grid">
     <div class="card">Bedroom Interior</div>
     <div class="card">Modular Kitchen</div>
     <div class="card">Wardrobe & Storage</div>
@@ -64,22 +72,34 @@
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-  <h2>Projects Gallery</h2>
+  <h2>Latest Projects</h2>
 
-  <div class="gallery">
+  <div class="container gallery">
     <div class="project">
       <img src="https://picsum.photos/400/300?1">
-      <p>Bedroom — Laketown<br>Material: Ply + Laminate<br>₹1.2L - ₹2L</p>
+      <div class="info">
+        Bedroom — Laketown<br>
+        Material: Ply + Laminate<br>
+        ₹1.2L - ₹2L
+      </div>
     </div>
 
     <div class="project">
       <img src="https://picsum.photos/400/300?2">
-      <p>Kitchen — Kolkata<br>Material: Marine Ply<br>₹1.5L - ₹3L</p>
+      <div class="info">
+        Kitchen — Kolkata<br>
+        Marine Ply<br>
+        ₹1.5L - ₹3L
+      </div>
     </div>
 
     <div class="project">
       <img src="https://picsum.photos/400/300?3">
-      <p>Wardrobe — Salt Lake<br>Material: HDHMR<br>₹80K - ₹1.5L</p>
+      <div class="info">
+        Wardrobe — Salt Lake<br>
+        HDHMR<br>
+        ₹80K - ₹1.5L
+      </div>
     </div>
   </div>
 </section>
@@ -87,37 +107,38 @@
 <!-- WHY CHOOSE -->
 <section class="section light">
   <h2>Why Choose Rudra Interior</h2>
-  <ul class="features">
-    <li>One-Man Dedicated Designer</li>
-    <li>Custom & Artistic Work</li>
-    <li>Budget Friendly Options</li>
-    <li>Branded Materials</li>
-    <li>On-Site Supervision</li>
-    <li>Kolkata Service Coverage</li>
-  </ul>
+
+  <div class="container features">
+    <div>✔ One-Man Dedicated Designer</div>
+    <div>✔ Custom & Artistic Work</div>
+    <div>✔ Budget Friendly Options</div>
+    <div>✔ Branded Materials</div>
+    <div>✔ On-Site Supervision</div>
+    <div>✔ Kolkata Service Coverage</div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section contact">
   <h2>Contact Us</h2>
+
   <p>📍 Laketown, Kolkata</p>
   <p>📞 9836421193 / 7980383184</p>
   <p>✉️ sagardas811980@gmail.com</p>
 
-  <div class="contact-buttons">
-    <a href="tel:9836421193" class="btn">Call</a>
-    <a href="https://wa.me/919836421193" class="btn btn-green">WhatsApp</a>
-    <a href="mailto:sagardas811980@gmail.com" class="btn btn-dark">Get Quote</a>
+  <div class="hero-buttons">
+    <a href="tel:9836421193" class="btn gold">Call</a>
+    <a href="https://wa.me/919836421193" class="btn green">WhatsApp</a>
+    <a href="mailto:sagardas811980@gmail.com" class="btn dark">Get Quote</a>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 RUDRA INTERIOR | Kolkata</p>
 </footer>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919836421193" class="whatsapp-float">💬</a>
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919836421193" class="whatsapp">💬</a>
 
 </body>
 </html>
