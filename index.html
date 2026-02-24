@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RUDRA INTERIOR | Kolkata</title>
+
+<title>RUDRA INTERIOR | Interior Designer Kolkata</title>
+
+<meta name="description" content="Rudra Interior — Premium Interior Designer in Kolkata. Bedroom, Modular Kitchen, Wardrobe, Custom Furniture & Full Home Interiors.">
+
+<!-- SEO Keywords -->
+<meta name="keywords" content="Interior Designer Kolkata, Modular Kitchen Kolkata, Bedroom Interior Kolkata, Rudra Interior">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
+
 <header class="header">
-  <div class="container nav">
-    <h2 class="logo">RUDRA INTERIOR</h2>
-    <nav>
+  <div class="nav container">
+    <h2>RUDRA INTERIOR</h2>
+
+    <div class="menu-toggle">☰</div>
+
+    <nav class="menu">
       <a href="#home">Home</a>
-      <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -22,44 +34,27 @@
   </div>
 </header>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
+
 <section id="home" class="hero">
-  <div class="hero-overlay">
+  <div class="overlay">
     <h1>Creative Interior Solutions for Modern Living</h1>
     <p>Designed & Executed by Rudra Interior, Kolkata</p>
 
-    <div class="hero-buttons">
+    <div class="buttons">
       <a href="#projects" class="btn gold">View Projects</a>
       <a href="tel:9836421193" class="btn dark">Call Now</a>
-      <a href="https://wa.me/919836421193" class="btn green">WhatsApp</a>
+      <a href="https://wa.me/919836421193?text=Hello%20Rudra%20Interior,%20I%20want%20a%20quotation" class="btn green">WhatsApp</a>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container two-col">
-    <div>
-      <h2>About Rudra Interior</h2>
-      <p><strong>Owner:</strong> Sagar Das</p>
-      <p>Skilled Interior Designer & Fine Artist</p>
-      <p>Specialized in difficult & custom designs</p>
-      <p><strong>Location:</strong> Laketown, Kolkata</p>
+<!-- ================= SERVICES ================= -->
 
-      <p class="highlight">
-        Rudra Interior is a one-man creative studio delivering premium interior solutions with artistic excellence.
-      </p>
-    </div>
-
-    <img src="https://picsum.photos/500/400" alt="Interior">
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section light">
+<section id="services" class="section">
   <h2>Our Services</h2>
 
-  <div class="container grid">
+  <div class="grid container">
     <div class="card">Bedroom Interior</div>
     <div class="card">Modular Kitchen</div>
     <div class="card">Wardrobe & Storage</div>
@@ -70,55 +65,61 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Latest Projects</h2>
+<!-- ================= PROJECT FILTER ================= -->
 
-  <div class="container gallery">
-    <div class="project">
-      <img src="https://picsum.photos/400/300?1">
-      <div class="info">
-        Bedroom — Laketown<br>
-        Material: Ply + Laminate<br>
-        ₹1.2L - ₹2L
-      </div>
+<section id="projects" class="section light">
+  <h2>Our Projects</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filter('all')">All</button>
+    <button onclick="filter('bedroom')">Bedroom</button>
+    <button onclick="filter('kitchen')">Kitchen</button>
+    <button onclick="filter('wardrobe')">Wardrobe</button>
+  </div>
+
+  <div class="gallery container">
+
+    <div class="project bedroom">
+      <img src="https://picsum.photos/400/300?1" onclick="openLightbox(this)">
+      <p>Bedroom — Laketown</p>
     </div>
 
-    <div class="project">
-      <img src="https://picsum.photos/400/300?2">
-      <div class="info">
-        Kitchen — Kolkata<br>
-        Marine Ply<br>
-        ₹1.5L - ₹3L
-      </div>
+    <div class="project kitchen">
+      <img src="https://picsum.photos/400/300?2" onclick="openLightbox(this)">
+      <p>Kitchen — Kolkata</p>
     </div>
 
-    <div class="project">
-      <img src="https://picsum.photos/400/300?3">
-      <div class="info">
-        Wardrobe — Salt Lake<br>
-        HDHMR<br>
-        ₹80K - ₹1.5L
-      </div>
+    <div class="project wardrobe">
+      <img src="https://picsum.photos/400/300?3" onclick="openLightbox(this)">
+      <p>Wardrobe — Salt Lake</p>
     </div>
+
   </div>
 </section>
 
-<!-- WHY CHOOSE -->
-<section class="section light">
-  <h2>Why Choose Rudra Interior</h2>
+<!-- ================= LIGHTBOX ================= -->
 
-  <div class="container features">
-    <div>✔ One-Man Dedicated Designer</div>
-    <div>✔ Custom & Artistic Work</div>
-    <div>✔ Budget Friendly Options</div>
-    <div>✔ Branded Materials</div>
-    <div>✔ On-Site Supervision</div>
-    <div>✔ Kolkata Service Coverage</div>
-  </div>
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<!-- ================= GOOGLE MAP ================= -->
+
+<section class="section">
+  <h2>Our Location</h2>
+
+  <iframe
+    src="https://maps.google.com/maps?q=Laketown%20Kolkata&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen>
+  </iframe>
+
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
+
 <section id="contact" class="section contact">
   <h2>Contact Us</h2>
 
@@ -126,19 +127,15 @@
   <p>📞 9836421193 / 7980383184</p>
   <p>✉️ sagardas811980@gmail.com</p>
 
-  <div class="hero-buttons">
-    <a href="tel:9836421193" class="btn gold">Call</a>
-    <a href="https://wa.me/919836421193" class="btn green">WhatsApp</a>
-    <a href="mailto:sagardas811980@gmail.com" class="btn dark">Get Quote</a>
-  </div>
+  <a href="https://wa.me/919836421193?text=Hello%20Rudra%20Interior,%20I%20want%20a%20quote" class="btn green">Get Quote on WhatsApp</a>
+
 </section>
 
 <footer>
-  <p>© 2026 RUDRA INTERIOR | Kolkata</p>
+  <p>© 2026 RUDRA INTERIOR | Interior Designer Kolkata</p>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/919836421193" class="whatsapp">💬</a>
+<script src="script.js"></script>
 
 </body>
 </html>
