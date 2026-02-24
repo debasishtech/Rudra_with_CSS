@@ -3,18 +3,6 @@ document.querySelector(".menu-toggle").onclick = function(){
   document.querySelector(".menu").classList.toggle("show");
 };
 
-// FILTER
-function filter(category){
-  let items = document.querySelectorAll(".project");
-
-  items.forEach(item=>{
-    item.style.display =
-      (category==="all" || item.classList.contains(category))
-      ? "block"
-      : "none";
-  });
-}
-
 // LIGHTBOX
 function openLightbox(img){
   document.getElementById("lightbox").style.display="flex";
