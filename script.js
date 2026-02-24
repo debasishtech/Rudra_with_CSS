@@ -3,7 +3,7 @@ document.querySelector(".menu-toggle").onclick = function(){
   document.querySelector(".menu").classList.toggle("show");
 };
 
-// PROJECT FILTER
+// FILTER
 function filter(category){
   let items = document.querySelectorAll(".project");
 
