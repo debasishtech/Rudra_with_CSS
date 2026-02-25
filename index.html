@@ -1,169 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RUDRA INTERIOR | Interior Designer Kolkata</title>
-
-<meta name="description" content="Rudra Interior — Premium Interior Designer in Kolkata. Bedroom, Kitchen, Wardrobe, Full Home Interior Design.">
+<title>Rudra Interior | Luxury Interior Designer Kolkata</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-
-<header class="header">
-  <div class="container nav">
-
-    <h2 class="logo">RUDRA INTERIOR</h2>
-
-    <div class="menu-toggle">☰</div>
-
-    <nav class="menu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </div>
-</header>
-
-<!-- ================= HERO ================= -->
-
-<section id="home" class="hero">
-  <div class="hero-content">
-    <h1>Interior Design That Reflects Your Style</h1>
-    <p>Creative Interior Solutions for Modern Living</p>
-
-    <div class="buttons">
-      <a href="#projects" class="btn gold">View Projects</a>
-      <a href="https://wa.me/919836421193?text=Hello%20Rudra%20Interior,%20I%20want%20a%20quotation" class="btn green">Get Quote</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="section about">
-
-  <div class="container two-col">
-
-    <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
-
-    <div>
-      <h2>About Rudra Interior</h2>
-
-      <p><strong>Owner:</strong> Sagar Das</p>
-      <p>Fine Artist & Skilled Interior Designer</p>
-      <p>Specialized in Custom & Difficult Designs</p>
-      <p>Location: Laketown, Kolkata</p>
-
-      <p class="highlight">
-        Rudra Interior is a one-man creative studio delivering premium interior solutions with artistic excellence.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ================= SERVICES ================= -->
-
-<section id="services" class="section light">
-
-  <h2>Our Services</h2>
-
-  <div class="container grid">
-
-    <div class="card">Bedroom Interior</div>
-    <div class="card">Modular Kitchen</div>
-    <div class="card">Wardrobe & Storage</div>
-    <div class="card">TV Unit</div>
-    <div class="card">False Ceiling</div>
-    <div class="card">Custom Furniture</div>
-    <div class="card">Commercial Interior</div>
-
-  </div>
-
-</section>
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects" class="section">
-
-  <h2>Latest Projects</h2>
-
-  <div class="container gallery">
-
-    <div class="project bedroom">
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" onclick="openLightbox(this)">
-      <p>Luxury Bedroom — Laketown</p>
-    </div>
-
-    <div class="project kitchen">
-      <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba" onclick="openLightbox(this)">
-      <p>Modular Kitchen — Kolkata</p>
-    </div>
-
-    <div class="project living">
-      <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688" onclick="openLightbox(this)">
-      <p>Modern Living Room — Salt Lake</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img">
+<header>
+<div class="logo">
+<img src="logo.png">
+Rudra <span>Interior</span>
 </div>
 
-<!-- ================= WHY CHOOSE ================= -->
+<div class="menu-btn"><i class="fas fa-bars"></i></div>
 
-<section class="section light">
+<nav class="nav-links">
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
+</header>
 
-  <h2>Why Choose Rudra Interior</h2>
+<!-- HERO SLIDER -->
+<section class="hero">
 
-  <div class="container features">
-    <div>✔ One-Man Dedicated Designer</div>
-    <div>✔ Custom & Artistic Work</div>
-    <div>✔ Budget Friendly Options</div>
-    <div>✔ Branded Materials</div>
-    <div>✔ On-Site Supervision</div>
-    <div>✔ Kolkata Service Coverage</div>
-  </div>
+<div class="hero-content">
 
-</section>
+<h1 id="heroText">Luxury Interior Design</h1>
 
-<!-- ================= CONTACT ================= -->
+<p>Kolkata’s Trusted Premium Interior Experts</p>
 
-<section id="contact" class="section contact">
+<div class="btn-group">
+<a href="tel:+919836421193" class="btn gold">📞 Call Now</a>
+<a href="https://wa.me/919836421193" class="btn outline">💬 WhatsApp</a>
+</div>
 
-  <h2>Contact Us</h2>
-
-  <p>📍 Laketown, Kolkata</p>
-  <p>📞 9836421193 / 7980383184</p>
-  <p>✉️ sagardas811980@gmail.com</p>
-
-  <iframe
-    src="https://maps.google.com/maps?q=Laketown%20Kolkata&t=&z=13&ie=UTF8&iwloc=&output=embed"
-    width="100%" height="350" style="border:0;">
-  </iframe>
+</div>
 
 </section>
 
-<footer>
-  <p>© 2026 RUDRA INTERIOR | Interior Designer Kolkata</p>
-</footer>
+<!-- SERVICES -->
+<section>
+<h2 class="section-title">Our <span>Services</span></h2>
 
-<script src="script.js"></script>
+<div class="service-grid">
+
+<div class="service-card"><i class="fas fa-bed"></i><h3>Bedroom Interior</h3></div>
+<div class="service-card"><i class="fas fa-utensils"></i><h3>Modular Kitchen</h3></div>
+<div class="service-card"><i class="fas fa-tv"></i><h3>TV Unit</h3></div>
+<div class="service-card"><i class="fas fa-couch"></i><h3>Custom Furniture</h3></div>
+<div class="service-card"><i class="fas fa-building"></i><h3>Commercial Interior</h3></div>
+<div class="service-card"><i class="fas fa-border-all"></i><h3>False Ceiling</h3></div>
+
+</div>
+</section>
+
+<!-- PROJECT FILTER -->
+<section>
+<h2 class="section-title">Projects</h2>
+
+<div class="filter-btns">
+<button onclick="filter('all')">All</button>
+<button onclick="filter('kitchen')">Kitchen</button>
+<button onclick="filter('bedroom')">Bedroom</button>
+<button onclick="filter('living')">Living</button>
+<button onclick="filter('office')">Office</button>
+</div>
+
+<div class="project-grid">
+
+<div class="project kitchen"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d"></div>
+<div class="project bedroom"><img src="https://images.unsplash.com/photo-1540518614846-7eded433c457"></div>
+<div class="project living"><img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2"></div>
+<div class="project office"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c"></div>
+
+</div>
+</section>
+<!-- WHY CHOOSE US -->
+<section id="why-us" class="why-us">
+    <h2 class="section-title">Why Choose <span>Rudra Interior</span></h2>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <i class="fas fa-user-shield"></i>
+            <h4>One-Man Dedicated Designer</h4>
+            <p>Sagar Das handles your project personally from start to finish.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-palette"></i>
+            <h4>Custom & Artistic Work</h4>
+            <p>Unique designs tailored to your taste and lifestyle.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-wallet"></i>
+            <h4>Budget Friendly Options</h4>
+            <p>Premium aesthetics at competitive prices.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-check-circle"></i>
+            <h4>Branded Materials</h4>
+            <p>We use top-quality, durable materials.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-hard-hat"></i>
+            <h4>On-Site Supervision</h4>
+            <p>Strict quality control during execution.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Kolkata Service Coverage</h4>
+            <p>Serving Laketown and surrounding areas.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT US -->
+<section id="about">
+    <h2 class="section-title">About <span>Us</span></h2>
+
+    <div class="about-grid">
+
+        <div class="about-text">
+            <h3>Artistic Excellence in Every Detail</h3>
+
+            <p>
+                Rudra Interior is a one-man creative studio delivering premium interior solutions
+                with artistic excellence. Led by <strong>Sagar Das</strong>, a skilled Interior
+                Designer and Fine Artist, we specialize in bringing custom, difficult designs to life.
+            </p>
+
+            <ul>
+                <li><i class="fas fa-user-tie"></i> <strong>Owner:</strong> Sagar Das</li>
+                <li><i class="fas fa-paint-brush"></i> <strong>Experience:</strong> Interior Designer & Fine Artist</li>
+                <li><i class="fas fa-tools"></i> <strong>Specialty:</strong> Difficult & Custom Designs</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Laketown, Kolkata</li>
+            </ul>
+        </div>
+
+        <div class="about-img"></div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Contact Sagar Das</h3>
+
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 98364 21193<br>+91 79803 83184</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>sagardas811980@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Laketown, Kolkata, West Bengal</span>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <a href="tel:+919836421193" class="contact-btn">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+
+                <a href="https://wa.me/919836421193" target="_blank" class="contact-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+
+                <a href="mailto:sagardas811980@gmail.com" class="contact-btn">
+                    <i class="fas fa-file-invoice"></i> Get Quote
+                </a>
+            </div>
+
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=Laketown+Kolkata&output=embed"
+            width="100%" height="100%"
+            style="border:0; border-radius:10px; min-height: 320px;"
+            loading="lazy">
+        </iframe>
+
+    </div>
+</section>
+
+
+<a href="https://wa.me/919836421193" class="float-wa">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+
+/* MOBILE MENU */
+document.querySelector('.menu-btn').onclick=()=>{
+document.querySelector('.nav-links').classList.toggle('show');
+}
+
+/* FILTER */
+function filter(cat){
+document.querySelectorAll('.project').forEach(el=>{
+el.style.display=(cat==='all'||el.classList.contains(cat))?'block':'none';
+})
+}
+
+/* HERO TEXT SLIDER */
+const texts = [
+"Luxury Interior Design",
+"Custom Dream Spaces",
+"Modern Elegant Interiors",
+"Premium Home Transformation"
+];
+
+let t = 0;
+setInterval(()=>{
+t = (t + 1) % texts.length;
+document.getElementById("heroText").textContent = texts[t];
+}, 3000);
+
+/* HERO IMAGE SLIDER */
+const hero = document.querySelector(".hero");
+const images = [
+"url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0')",
+"url('https://images.unsplash.com/photo-1540518614846-7eded433c457')",
+"url('https://images.unsplash.com/photo-1595428774223-ef52624120d2')"
+];
+
+let i = 0;
+setInterval(()=>{
+i = (i + 1) % images.length;
+hero.style.backgroundImage =
+"linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.75))," + images[i];
+}, 4000);
+
+</script>
 
 </body>
 </html>
