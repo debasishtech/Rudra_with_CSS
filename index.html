@@ -777,20 +777,47 @@ const observer = new IntersectionObserver(entries=>{
 document.querySelectorAll("section").forEach(sec=>{
     observer.observe(sec);
 });
-/* ===== MOBILE MENU TAP HIGHLIGHT ===== */
 
-const menuLinks = document.querySelectorAll('.nav-links a');
+/* ===== MOBILE ACTIVE TAB ON SCROLL (SCROLL SPY) ===== */
 
-menuLinks.forEach(link => {
-    link.addEventListener('click', function(){
+if (window.innerWidth <= 768) {
 
-        // remove highlight from others
-        menuLinks.forEach(l => l.classList.remove('active-link'));
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-        // add highlight to tapped one
-        this.classList.add('active-link');
-    });
+function setActiveLink() {
+
+let scrollPos = window.scrollY + 140; 
+// 140 = header + padding offset (important)
+
+sections.forEach(section => {
+
+const top = section.offsetTop;
+const bottom = top + section.offsetHeight;
+const id = section.getAttribute("id");
+
+if (scrollPos >= top && scrollPos < bottom) {
+
+navLinks.forEach(link => link.classList.remove("active-link"));
+
+const activeLink = document.querySelector(
+'.nav-links a[href="#' + id + '"]'
+);
+
+if (activeLink) activeLink.classList.add("active-link");
+
+}
+
 });
+
+}
+
+window.addEventListener("scroll", setActiveLink);
+
+// run once on load
+setActiveLink();
+
+}
 </script>
 </script>
 </body>
